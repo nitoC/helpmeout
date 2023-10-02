@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 
 const File = () => {
     let params = useParams();
-    console.log(params.file)
+    const filepath = params.file
   return (
     <div className='file'>
         <Header/>
@@ -27,7 +27,7 @@ const File = () => {
                     Name
                 </p>
                 <div className='file-name'>
-                    <p className='file-name-text'>Untitled_Video_20232509 </p>
+                    <p className='file-name-text'>{filepath} </p>
                     <img src={edit} alt='file name icon' className='file-name-icon'/>
                 </div>
 
@@ -39,7 +39,7 @@ const File = () => {
                 <div className='file-link-container'>
                     <p className='file-link-heading'>Video Url</p>
                     <div className='link-input-container'>
-                <input className='link-input' type='text' placeholder='enter email of receiver' value={''} disabled/>
+                <input className='link-input' type='text' placeholder='enter email of receiver' value={ `https://helpmeout-0eal.onrender.com/video/${filepath}`} disabled/>
                     <button className="btn btn-copy">copy</button>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const File = () => {
             </div>
             <div className='file-play'>
                 <div className='file-video-wrapper'>
-                    <video className='video-element' src='' autoPlay controls>cannot play video</video>
+                    <video className='video-element' src={ `https://helpmeout-0eal.onrender.com/video/${filepath}`} autoPlay controls>cannot play video</video>
                 </div>
                 <div className='transcribe'>
                     <div className='transcribe-heading'>
@@ -96,5 +96,6 @@ const File = () => {
     </div>
   )
 }
+
 
 export default File
