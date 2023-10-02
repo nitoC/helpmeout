@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    padding: 1.5rem 3.125rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    color: #000;
+font-family: 'Work Sans', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration: none;
+}
+.nav{
+    display: flex;
+    gap:40px;
+}
+.nav-btn{
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color:  #120B48;
+text-align: center;
+
+/* Typography/SubHeader/SH2 */
+font-family: 'Sora', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
