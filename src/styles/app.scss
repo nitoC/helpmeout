@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Inter:wght@100;200;300;400;500&family=Lato&family=Lobster&family=Manrope:wght@200;300;400;500;600;700&family=Noto+Sans+Linear+B&family=Noto+Sans+Pau+Cin+Hau&family=Noto+Serif+Telugu:wght@900&family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Oswald:wght@200&family=Roboto:wght@100&family=Sora:wght@100;200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
 
 .file-wrapper {
+  
   display: flex;
   padding: 1.5625rem 3.125rem;
   gap: 20px;
@@ -24,6 +25,7 @@
   .file-name-label {
     color: #727272;
     font-family: "Sora", sans-serif;
+    padding:1.5rem 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -79,6 +81,7 @@
       font-family: "Sora", sans-serif;
       font-size: 20px;
       font-style: normal;
+      padding:1.5rem 0;
       font-weight: 600;
       line-height: normal;
     }
@@ -123,6 +126,7 @@
 
     /* Typography/SubHeader/SH2 */
     font-family: "Sora", sans-serif;
+    padding: 1.5rem 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -288,7 +292,7 @@
 
 .main-header{
   display: flex;
-  border-top: 1px solid #F4F6F8;
+  border-top: 2px solid #F4F6F8;
   justify-content: center;
   padding: 6.6875rem 0px 4.6875rem 0px;
   .main-home-heading{
@@ -319,7 +323,7 @@ line-height: 100%; /* 64px */
   line-height: normal;
   }
   .main-text-wrapper{
-    padding: 2rem 0;
+    padding: 5rem 0;
   }
   .main-text-container{
     max-width:34.25rem;

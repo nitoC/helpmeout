@@ -13,10 +13,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    exact:true
   },
   {
     path:"file/:file",
-    element:<File/>
+    element:<File/>,
+    exact:true
   }
 ]);
 
